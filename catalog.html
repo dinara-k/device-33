@@ -17,25 +17,31 @@
         <div class="user-menu">
           <div class="user-left-wrapper">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hidden" for="search-field">Строка поиска</label>
+              <label class="visually-hidden" for="search-field">search Строка поиска</label>
               <input class="search-field" placeholder="Текст поиска" type="search" id="search-field" name="search-field">
-              <button class="button-medium button-blue" type="submit">Найти</button>
+              <button class="search-button" type="submit">Найти</button>
             </form>
-            <a class="user-menu-link" href="#">Коля Петухов</a>
-            <a class="user-menu-link" href="#">Выйти</a>
+            <a class="user-menu-link icon-auth" href="#">Коля Петухов</a>
+            <a class="user-menu-link exit" href="#">Выйти</a>
           </div>
-          <div class="user-right-wrapper">
-            <a class="user-menu-link" href="#">Сравнить</a>
-            <button class="user-menu-button" type="button">
-              <span class="products-number">2</span>
-              Корзина
-            </button>
-          </div>
+          <ul class="user-right-wrapper">
+            <li class="wrapper-item">
+              <a class="user-menu-link" href="#">Сравнить</a>
+            </li>
+            <li class="wrapper-item">
+              <button class="user-menu-button" type="button">
+                <span class="products-number">2</span>
+                Корзина
+              </button>
+            </li>
+          </ul>
         </div>
         <!-- Нижняя строка шапки -->
         <div class="navigation-container">
           <div class="navigation-catalog-container">
-            <a class="navigation-link" href="catalog.html">Каталог товаров</a>
+            <a class="navigation-link" href="catalog.html">Каталог товаров
+              <span class="icon-pluse"></span>
+            </a>
             <ul class="navigation-catalog">
               <li>
                 <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
@@ -104,16 +110,8 @@
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="range">
-                  <div class="range-wrapper-inputs">
-                    <label class="catalog-filter-label" for="min-price">
-                      от <input class="range-input" type="number" value="0" id="min-price" name="min-price"> ₽
-                    </label>
-                    <label class="catalog-filter-label" for="max-price">
-                      до <input class="range-input" type="number" value="5000" id="max-price" name="max-price"> ₽
-                    </label>
-                  </div>
                   <div class="range-scale">
-                    <div class="range-bar" style="left: 0px; width: 225px;">
+                    <div class="range-bar" style="left: 20px; width: 119px;">
                       <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
@@ -121,6 +119,14 @@
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
+                  </div>
+                  <div class="range-wrapper-inputs">
+                    <label class="catalog-filter-label" for="min-price">
+                      от <input class="range-input" type="number" value="0" id="min-price" name="min-price">
+                    </label>
+                    <label class="catalog-filter-label" for="max-price">
+                      до <input class="range-input" type="number" value="5000" id="max-price" name="max-price">
+                    </label>
                   </div>
                 </div>
               </fieldset>
@@ -198,11 +204,11 @@
               <!-- <div class="select sorting-type">
               </div> -->
               <div class="sorting-buttons">
-                <button href="#" class="card-grid-toggle" type="button">
-                  <span class="1visually-hidden">По возрастанию</span>
+                <button class="button-sort sort-up" href="#" class="card-grid-toggle" type="button">
+                  <span class="visually-hidden">По возрастанию</span>
                 </button>
-                <button href="#" class="card-grid-toggle" type="button">
-                  <span class="1visually-hidden">По убыванию</span>
+                <button class="button-sort sort-down" href="#" class="card-grid-toggle" type="button">
+                  <span class="visually-hidden">По убыванию</span>
                 </button>
               </div>
             </div>
@@ -215,7 +221,7 @@
                   </a>
                   <div class="product-card-content">
                     <a class="product-card-link" href="#">
-                      <h4 class="product-card-title">Любительская селфи-палка</h4>
+                      <h4 class="product-card-title">Любительская селфи-&nbsp;палка</h4>
                     </a>
                     <span class="product-card-price">500 ₽</span>
                   </div>
@@ -239,7 +245,7 @@
                   </a>
                   <div class="product-card-content">
                     <a class="product-card-link" href="#">
-                      <h4 class="product-card-title">Непотопляемая селфи-палка</h4>
+                      <h4 class="product-card-title">Непотопляемая селфи-&nbsp;палка</h4>
                     </a>
                     <span class="product-card-price">2 500 ₽</span>
                   </div>
@@ -251,7 +257,7 @@
                   </a>
                   <div class="product-card-content">
                     <a class="product-card-link" href="#">
-                      <h4 class="product-card-title">Селфи-палка «Следуй за мной»</h4>
+                      <h4 class="product-card-title">Селфи-палка «Следуй за&nbsp;мной»</h4>
                     </a>
                     <span class="product-card-price">1 500 ₽</span>
                   </div>
