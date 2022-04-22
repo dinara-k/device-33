@@ -108,7 +108,7 @@
             <h3 class="container-title">Фильтр:</h3>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                <legend class="catalog-filter-title">Стоимость</legend>
                 <div class="range">
                   <div class="range-scale">
                     <div class="range-bar" style="left: 20px; width: 119px;">
@@ -122,7 +122,7 @@
                   </div>
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label" for="min-price">
-                      от <input class="range-input" type="number" value="0" id="min-price" name="min-price">
+                      от <input class="range-input" type="number" value="10" id="min-price" name="min-price">
                     </label>
                     <label class="catalog-filter-label" for="max-price">
                       до <input class="range-input" type="number" value="5000" id="max-price" name="max-price">
@@ -189,7 +189,9 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button filter-submit" type="submit">Показать</button>
+              <button class="button-main form-button" type="submit">
+                <span>Показать</span>
+              </button>
             </form>
           </div>
 
@@ -201,8 +203,6 @@
                   <option value="popular">Популярные</option>
                   <option value="cheap">Цена</option>
                 </select>
-              <!-- <div class="select sorting-type">
-              </div> -->
               <div class="sorting-buttons">
                 <button class="button-sort sort-up" href="#" class="card-grid-toggle" type="button">
                   <span class="visually-hidden">По возрастанию</span>
@@ -225,7 +225,9 @@
                     </a>
                     <span class="product-card-price">500 ₽</span>
                   </div>
-                  <a class="button" href="#">Подробнее</a>
+                  <a class="button-main" href="#">
+                    <span>Подробнее</span>
+                  </a>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
@@ -237,7 +239,9 @@
                     </a>
                     <span class="product-card-price">1 500 ₽</span>
                   </div>
-                  <a class="button" href="#">Подробнее</a>
+                  <a class="button-main" href="#">
+                    <span>Подробнее</span>
+                  </a>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
@@ -249,7 +253,9 @@
                     </a>
                     <span class="product-card-price">2 500 ₽</span>
                   </div>
-                  <a class="button" href="#">Подробнее</a>
+                  <a class="button-main" href="#">
+                    <span>Подробнее</span>
+                  </a>
                 </li>
                 <li class="product-card">
                   <a class="product-card-link" href="#">
@@ -261,7 +267,9 @@
                     </a>
                     <span class="product-card-price">1 500 ₽</span>
                   </div>
-                  <a class="button" href="#">Подробнее</a>
+                  <a class="button-main" href="#">
+                    <span>Подробнее</span>
+                  </a>
                 </li>
               </ul>
               <button class="pagination-show-more" type="button">Загрузить ещё</button>
