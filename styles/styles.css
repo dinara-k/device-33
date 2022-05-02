@@ -1,3 +1,4 @@
+/* правильный путь */
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -14,7 +15,8 @@
   font-display: swap;
 }
 
-/*@font-face {
+/* неправильный путь */
+/* @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -28,7 +30,7 @@
   font-weight: 700;
   src: url("fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
-}*/
+} */
 
 @font-face {
   font-family: "Raleway";
@@ -620,6 +622,12 @@ img {
   opacity: 0.3;
 }
 
+.slider-button:disabled,
+.slider-button:disabled:hover {
+  opacity: 0.1;
+  cursor: default;
+}
+
 .slider-next {
   transform: rotate(180deg);
 }
@@ -736,6 +744,11 @@ img {
 .slider-pagination-button:active {
   outline: none;
   opacity: 0.3;
+}
+
+.slider-pagination-button:disabled {
+  opacity: 0.1;
+  cursor: default;
 }
 
 .slider-pagination-button-current {
@@ -1415,6 +1428,11 @@ img {
   line-height: 20px;
 }
 
+.htmlacademy-link {
+  display: grid;
+  place-items: center;
+}
+
 .htmlacademy-link svg {
   fill: #FFC700;
 }
@@ -1949,7 +1967,7 @@ img {
 .toggle-min {
   top: -8px;
   left: -10px;
-  transform: translateX(-20px);
+  /* transform: translateX(-20px); */
 }
 
 .toggle-max {
@@ -1960,6 +1978,7 @@ img {
 .range-wrapper-inputs {
   display: flex;
   justify-content: flex-start;
+  padding-bottom: 5px;
 }
 
 .catalog-filter-label {
@@ -2224,6 +2243,26 @@ img {
   position: relative;
 }
 
+.product-card-link {
+  /* position: relative; */
+  display: block;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* .product-card-link:hover {
+  opacity: 0.6;
+} */
+
+.product-card-link:focus {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.product-card-link:active {
+  outline: none;
+}
+
 .product-card-image {
   position: relative;
 }
@@ -2251,6 +2290,12 @@ img {
 
 .product-card-img {
   display: block;
+}
+
+.product-card-image .button-main {
+  position: absolute;
+  top: 40%;
+  left: 30%;
 }
 
 .product-icon {
@@ -2283,13 +2328,10 @@ img {
 
 .product-card-content:active {
   opacity: 0.3;
+  outline: none;
 }
 
-.product-card-link {
-  position: relative;
-  color: #000000;
-  text-decoration: none;
-}
+
 
 .product-card-title {
   width: 230px;
@@ -2311,11 +2353,7 @@ img {
   background-color: #FFFFFF;
 }
 
-.product-card .button-main {
-  position: absolute;
-  top: 40%;
-  left: 30%;
-}
+
 
 /* остановилась здесь */
 
