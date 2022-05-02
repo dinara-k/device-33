@@ -18,7 +18,7 @@
           <div class="user-left-wrapper">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="search-field">Строка поиска</label>
-              <input class="search-field" placeholder="Поиск по сайту" type="search" id="search-field" name="search-field">
+              <input class="search-field" placeholder="Поиск по сайту" type="search" id="search-field" name="search-field" required>
               <button class="search-button" type="submit">Найти</button>
             </form>
             <a class="user-menu-link icon-auth" href="#">Войти</a>
@@ -213,23 +213,23 @@
         <section class="catalog-sections container">
           <h2 class="visually-hidden">Разделы каталога</h2>
           <ul class="catalog-list">
-            <li class="catalog-list-item">
-              <a class="catalog-section-link virtual-reality" href="#">Виртуальная реальность</a>
+            <li class="catalog-list-item virtual-reality">
+              <a class="catalog-section-link" href="#">Виртуальная реальность</a>
             </li>
-            <li class="catalog-list-item">
-              <a class="catalog-section-link monopods-for-selfie" href="#">Моноподы для селфи</a>
+            <li class="catalog-list-item monopods-for-selfie">
+              <a class="catalog-section-link" href="#">Моноподы для селфи</a>
             </li>
-            <li class="catalog-list-item">
-              <a class="catalog-section-link action-cameras" href="#">Экшн-камеры</a>
+            <li class="catalog-list-item action-cameras">
+              <a class="catalog-section-link" href="#">Экшн-камеры</a>
             </li>
-            <li class="catalog-list-item">
-              <a class="catalog-section-link fitness-bracelets" href="#">Фитнес-браслеты</a>
+            <li class="catalog-list-item fitness-bracelets">
+              <a class="catalog-section-link" href="#">Фитнес-браслеты</a>
             </li>
-            <li class="catalog-list-item">
-              <a class="catalog-section-link smart-watches" href="#">Умные часы</a>
+            <li class="catalog-list-item smart-watches">
+              <a class="catalog-section-link" href="#">Умные часы</a>
             </li>
-            <li class="catalog-list-item">
-              <a class="catalog-section-link quadcopters" href="#">Квадрокоптеры</a>
+            <li class="catalog-list-item quadcopters">
+              <a class="catalog-section-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </section>
@@ -418,9 +418,10 @@
               <label class="form-label" for="order-name">Ваше имя:</label>
               <input class="field order-name" type="text" id="order-name" name="order-name" placeholder="Введите имя">
             </div>
-            <div class="field-group">
+            <div class="field-group field-error"> <!-- field-error - ошибочные данные -->
               <label class="form-label" for="order-email">Ваш e-mail:</label>
               <input class="field order-email" type="text" id="order-email" name="order-email" placeholder="Введите e-mail">
+              <span class="field-truth-show">Забавный у вас адрес</span> <!-- field-error-show - текст ошибки-->
             </div>
             <div class="field-group">
               <label class="form-label" for="order-comment">Что нужно привезти:</label>
