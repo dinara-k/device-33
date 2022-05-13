@@ -35,7 +35,7 @@
                 <span class="products-number">2</span>
                 Корзина
               </button>
-              <div class="popover"> <!--  popover-open -->
+              <div class="popover"> <!-- popover-open - поповер отображается -->
                 <div class="popover-content">
                   <h2 class="visually-hidden">Корзина</h2>
                   <ul class="cart-items-list">
@@ -84,29 +84,32 @@
             <a class="navigation-link" href="#">Каталог товаров
               <span class="icon-pluse"></span>
             </a>
-            <ul class="navigation-catalog">
-              <li>
-                <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li>
-                <a class="navigation-catalog-link" href="#">Моноподы для селфи</a>
-              </li>
-              <li>
-                <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
-              </li>
-              <li>
-                <a class="navigation-catalog-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a class="navigation-catalog-link" href="#">Умные часы</a>
-              </li>
-              <li>
-                <a class="navigation-catalog-link" href="#"></a>
-              </li>
-              <li>
-                <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
-              </li>
-            </ul>
+            <div class="navigation-catalog">
+              <ul class="navigation-catalog-item">
+                <li>
+                  <a class="navigation-catalog-link" href="#">Виртуальная реальность</a> <!--navigation-catalog-link-current - активный пункт подменю -->
+                </li>
+                <li>
+                  <a class="navigation-catalog-link" href="#">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="navigation-catalog-item">
+                <li>
+                  <a class="navigation-catalog-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a class="navigation-catalog-link" href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="navigation-catalog-item">
+                <li>
+                  <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -153,7 +156,7 @@
                 <legend class="catalog-filter-title">Стоимость</legend>
                 <div class="range">
                   <div class="range-scale">
-                    <div class="range-bar" style="left: 20px; width: 98px;">
+                    <div class="range-bar" style="left: -3px; width: 121px;">
                       <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
@@ -164,7 +167,7 @@
                   </div>
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label" for="min-price">
-                      <input class="range-input min-price" placeholder="от 10" type="number" id="min-price" name="min-price">
+                      <input class="range-input min-price" placeholder="от 0" type="number" id="min-price" name="min-price">
                     </label>
                     <label class="catalog-filter-label" for="max-price">
                       <input class="range-input max-price" placeholder="до 5000" type="number" id="max-price" name="max-price">
